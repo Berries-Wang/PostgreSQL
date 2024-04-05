@@ -1,0 +1,23 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PostgresSQL-16.2-debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/000.SOURCE_CODE/PostgreSQL-16.2/000.build-output/002.BIN_DIR/postgres",
+            "args": [
+                "-d",
+                "5",
+                "-D",
+                "${workspaceFolder}/000.SOURCE_CODE/PostgreSQL-16.2/001.build-script/003.DATA"
+            ],
+            "preLaunchTask": "000.PostgreSQL-16.2-debug-start-up.sh",
+            "postDebugTask": "001.PostgreSQL-16.2-debug-shutdown.sh"
+        }
+    ]
+}
+

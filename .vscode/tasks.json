@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "001.PostgreSQL-16.2-debug-shutdown.sh",
+            "type": "shell",
+            "command": "${workspaceFolder}/000.SOURCE_CODE/PostgreSQL-16.2/004.Debug-Shell/001.PostgreSQL-16.2-debug-shutdown.sh",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "000.PostgreSQL-16.2-debug-start-up.sh",
+            "type": "shell",
+            "command": "${workspaceFolder}/000.SOURCE_CODE/PostgreSQL-16.2/004.Debug-Shell/000.PostgreSQL-16.2-debug-start-up.sh",
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}
